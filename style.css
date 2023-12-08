@@ -184,3 +184,29 @@ footer a {
         margin: 2rem 0;
     }
 }
+nav a {
+    color: rgb(240, 240, 240);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    transition: all 0.2s;
+}
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+nav a:nth-child(1) {
+    background-color: #050505; 
+
+nav a:nth-child(2) {
+    background-color: #66ccff; 
+}
+
+nav a:nth-child(3) {
+    background-color: #ff6666;
+}
+}

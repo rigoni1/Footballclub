@@ -46,3 +46,59 @@ header a.cta {
     margin-top: 1rem;
     transition: all 0.2s;
 }
+
+header a.cta:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-bottom: 2rem;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 1%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color:black;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+section {
+    width: 80%;
+    text-align: center;
+    margin: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}

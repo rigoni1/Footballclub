@@ -56,3 +56,46 @@
 .container form #mobile {
     margin-left: 20px;
 }
+.container form h4 {
+    color: #ffffff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+}
+.container form #button {
+    border: none;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #353333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.container form #button:hover {
+    opacity: 0.7;
+}

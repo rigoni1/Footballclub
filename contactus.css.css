@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("contactfoto.jpg") no-repeat center center/cover;
+    background: url("contactfoto.png") no-repeat center center/cover;
 }
 
 .container form {

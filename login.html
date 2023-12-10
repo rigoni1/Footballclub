@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Form</title>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var usernameRegex = /^[a-zA-Z0-9_]{3,8}$/;
+            var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            var isValid = true;
+            if (!usernameRegex.test(username)) { 
+                alert("Invalid username.Ju lutem perdoreni nje username qe eshte te pakten 3-8 karaktere i gjate dhe permban vetem nje leter,numra dhe viza");
+                isValid = false;
+            }
+            if (!passwordRegex.test(password)) {
+                alert("Ju lutem rishikoni passwordin,passwordi juaj duhet te permbaj nje shkronje te vogel dhe nje te madhe dhe se paku 8 karaktere i gjate");
+                isValid = false;
+            }   
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <header>Login</header>
+        </div>
+        <form onsubmit="return validateForm()">
+            <div class="input-box">
+                <input type="text" id="username" class="input-field" placeholder="Username" required>
+                <input type="password" id="password" class="input-field" placeholder="Password" required>
+            </div>
+            <div class="forgot">
+                <label>
+                    <input type="checkbox" id="check"> Remember me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">Login</button>
+            </div>
+        </form>
+        <div class="sign-up-link">
+            <p>New User? <a href="register.html">Sign Up</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
